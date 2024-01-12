@@ -1,14 +1,6 @@
 class Map:
-    def __init__(self):
-         self.layout = [[0] * 30 for _ in range(30)]
+    def __init__(self, rows, columns, type):
+         self.grid = [[0] * 30 for _ in range(30)]
 
-def main():
-    mymap = Map()
-    for i in range(0, 29):
-        for k in range(0,29):
-            print(mymap.layout[i][k], end="")
-        print("\n")
+mydict = {1: 'Player', 2: "enemy", 3: "item", 4: "weapon", 5: "nigger" }
 
-
-if __name__ == "__main__":
-    main()
